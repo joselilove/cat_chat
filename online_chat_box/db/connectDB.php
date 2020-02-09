@@ -1,0 +1,6 @@
+<?php
+$connect = mysqli_connect("localhost","root","","cat_chat");
+		if(!$connect){
+			die('could not connect');
+		}
+?>
