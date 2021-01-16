@@ -1,5 +1,4 @@
 <?php
-
 include 'connectDB.php';
 $a = 0;
 $myObj = new stdClass();
