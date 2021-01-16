@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "aSfZ9dnJePd6zFCV12345678_=", "cat_chat");
+$connect = mysqli_connect("localhost", "catchat", "aSfZ9dnJePd6zFCV12345678_=", "cat_chat");
 if (!$connect) {
     die('could not connect');
 }
