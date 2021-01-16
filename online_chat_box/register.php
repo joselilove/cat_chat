@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,9 +7,9 @@
 
 <body>
 
-<?php include 'others/loading.php'; ?>   
+    <?php include 'others/loading.php'; ?>
 
-   <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/cat_wallpaper.PNG);">
+    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/cat_wallpaper.PNG);">
         <div class="login-box card">
             <div class="card-body">
                 <form class="form-horizontal form-material" id="register-form" action="" method="post">
@@ -36,7 +35,7 @@
                             <input type="file" id="input-file-now" class="dropify" />
                         </div>
                     </div> -->
-                    
+
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
                             <input type="button" name="submit" id="submit" class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" onclick="register()" value="Sign Up">
@@ -52,36 +51,35 @@
         </div>
     </section>
 
-<?php include 'others/other_plugins.php'; ?>
+    <?php include 'others/other_plugins.php'; ?>
 </body>
 <script type="text/javascript">
-function register(){
-  var data = $("#register-form").serialize();
-  $.ajax({
-         data: data,
-         type: "post",
-         url: "db/submit_register_user.php",
-         success: function(data){
-              if(data == 'Username already exist!.'){
-                   // alert('Username Already Exist || Please check below!');
-                   Swal.fire({
-                              type: 'error',
-                              title: 'Username Already Exist Please check below!',
-                              text: 'Something went wrong!'
-                            })
-              }
-              else{
-                alert(data);
+    function register() {
+        var data = $("#register-form").serialize();
+        $.ajax({
+            data: data,
+            type: "post",
+            url: "db/submit_register_user.php",
+            success: function(data) {
+                if (data == 'Username already exist!.') {
+                    // alert('Username Already Exist || Please check below!');
+                    Swal.fire({
+                        type: 'error',
+                        title: 'Username Already Exist Please check below!',
+                        text: 'Something went wrong!'
+                    })
+                } else {
+                    alert(data);
                     $(location).attr("href", 'login.php');
-              }
-         }
-});
-}
+                }
+            }
+        });
+    }
 
 
-// $(document).on('click','#submit',function(e) {
-  
-//  });
+    // $(document).on('click','#submit',function(e) {
+
+    //  });
 </script>
 
 </html>

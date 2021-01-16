@@ -9,8 +9,8 @@
     <link href="dist/css/style.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/node_modules/dropify/dist/css/dropify.min.css">
-	<link href="dist/css/pages/chat-app-page.css" rel="stylesheet">
+    <link href="dist/css/pages/chat-app-page.css" rel="stylesheet">
 
-		
+
     <link rel="stylesheet" type="text/css" href="../assets/node_modules/summernote/dist/summernote-bs4.css">
-	<link href="dist/css/pages/timeline-vertical-horizontal.css?v=21" rel="stylesheet">
+    <link href="dist/css/pages/timeline-vertical-horizontal.css?v=21" rel="stylesheet">
